@@ -1,0 +1,109 @@
+<!doctype>
+<html>
+<head>
+	<title>003-Form Elements</title>
+	<link rel='stylesheet' href='./style.css' />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<meta charset='utf-8' />
+
+</head>
+
+<body>
+	<section>
+		<h1>11 September, 2018</h1>
+		<form action='./myForm.php' action='POST' name='myForm' id='myForm'>
+			<fieldset id='main_fieldset' class='fieldset'>
+				<legend>My Form</legend>
+				<div class='input_container'>
+					<label for='name_text_field'>Name:</label>
+					<input type='text' name='name_text_field' id='name_text_field' maxlength='50' placeholder='Your full name here' />
+				</div>
+				<div class='input_container'>
+					<label for='email_text_field'>Email:</label>
+					<input type='email' name='email_text_field' id='email_text_field' maxlength='50' placeholder='email@domain.com' />
+				</div>
+				<div class='input_container'>
+					<label for='color_field'>Color:</label>
+					<input type='color' name='color_field' id='color_field' />
+				</div>
+				<div class='input_container'>
+					<label for='date_time_field'>Date & Time:</label>
+					<input type='datetime-local' name='date_time_field' id='date_time_field' />
+				</div>
+				<div class='input_container'>
+					<label for='week_field'>Week Selection:</label>
+					<input type='week' name='week_field' id='week_field' />
+				</div>
+				<div class='input_container'>
+					<label for='month_field'>Month Selection:</label>
+					<input type='month' name='month_field' id='month_field' />
+				</div>
+				<div class='input_container'>
+					<label for='number_field'>Number:</label>
+					<input type='number' name='number_field' id='number_field' placeholder='123456789' min='0' max='999999999' />
+				</div>
+				<div class='input_container'>
+					<label for='range_field'>Range:</label>
+					<input type='range' name='range_field' id='range_field' min='0' max='1000' step='100' />
+				</div>
+			</fieldset>
+			
+			<fieldset id='buttons_fieldset' class='fieldset'>
+				<legend>Buttons</legend>
+				<div id='radio_buttons_div' class='input_container'>
+					<label for='radio_buttons_field'>Radio Buttons:</label>
+					<ul>
+						<li>
+						  <input type='radio' name='radio_buttons_field' id='color_green' value='green' checked='checked' />
+						  <label for="color_green" class='color_value'>Radio Button #1</label>
+						</li>
+						<li>
+						  <input type='radio' name='radio_buttons_field' id='color_red' value='red' />
+						  <label for="color_red" class='color_value'>Radio Button #2</label>
+						</li>
+						<li>
+						  <input type='radio' name='radio_buttons_field' id='color_blue' value='blue' />
+						  <label for="color_blue" class='color_value'>Radio Button #3</label>
+						</li>
+					  </ul>
+				</div>
+				<div id='checkmark_buttons_div' class='input_container'>
+					<label for='checkmark_buttons_field'>Radio Buttons:</label>
+					<ul>
+						<li>
+						  <input type='checkbox' name='checkmark_buttons_field' id='color_green' value='green' checked='checked' />
+						  <label for="color_green" class='color_value'>Checkmark Button #1</label>
+						</li>
+						<li>
+						  <input type='checkbox' name='checkmark_buttons_field' id='color_red' value='red' />
+						  <label for="color_red" class='color_value'>Checkmark Button #2</label>
+						</li>
+						<li>
+						  <input type='checkbox' name='checkmark_buttons_field' id='color_blue' value='blue' />
+						  <label for="color_blue" class='color_value'>Checkmark Button #3</label>
+						</li>
+					  </ul>
+				</div>
+				<div>
+				  <label for='font_field'>Select a font:</label>
+				  <select name='font_field' id='font_field' size='1'>
+					<optgroup label='Fonts'>
+					  <option value="source_code_pro" selected='selected'>Source Code Pro</option>
+					  <option value="montserrat">Montserrat</option>
+					  <option value="lora">Lora</option>
+					</optgroup>
+				  </select>
+				</div>
+				<div>
+					<textarea id='textarea' name='textarea' placeholder='Enter text here'></textarea>
+				</div>
+			</fieldset>
+			
+			<fieldset id='button_fieldset' class='fieldset'>
+				<input type='submit' value='Send' name='submit_button' id='submit_button'>
+				<input type='reset' value='Reset' name='reset_button' id='reset_button'>
+			</fieldset>
+		</form>
+	</section>
+</body>
+</html>
